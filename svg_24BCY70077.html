@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>SVG Drawing Pad</h1>
+<div class="board-wrapper">
+    <svg id="svgBoard"
+         width="700"
+         height="350"
+         xmlns="http://www.w3.org/2000/svg">
+    </svg>
+    <button id="clearBtn">🔄</button>
+</div>
+<script src="svg_js.js"></script>
+<style>
+    .board-wrapper{
+        display:flex;
+        align-items:center;      
+        gap:20px;               
+    }
+    #svgBoard{
+        border:2px solid black;
+        background:white;
+    }
+    #clearBtn{
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        border:none;
+        background:white;
+        font-size:28px;
+        cursor:pointer;
+        box-shadow:0 0 5px rgba(0,0,0,0.4);
+    }
+</style>
+</body>
+</html>
